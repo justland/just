@@ -20,8 +20,8 @@ To define a **function**, you use the **fat arrow** syntax:
 ([<ctx>|]<params>) => <statement>
 ```
 
-[1, 'a'].forEach(x => x) // x: int | char
-const plusOne = &ctx => ctx.x + 1 // ctx: inferred, automatical reference resolution
+\[1, 'a'].forEach(x => x) // x: int | char
+const plusOne = \&ctx => ctx.x + 1 // ctx: inferred, automatical reference resolution
 
 Note that unlike the **fat arrow** syntax in JavaScript,
 the **fat arrow** syntax in Uni does not capture the enclosing scope.

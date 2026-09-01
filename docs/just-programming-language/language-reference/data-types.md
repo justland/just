@@ -50,10 +50,10 @@ You can write integer literals in multiple ways.
 
 | Literals | Example     |
 | -------- | ----------- |
-| Decimal  | 98_222      |
+| Decimal  | 98\_222      |
 | Hex      | 0xff        |
 | Octal    | 0o77        |
-| Binary   | 0b1111_0000 |
+| Binary   | 0b1111\_0000 |
 | Byte     | b'A'        |
 
 Decimal representations are typed as `i32` by default.

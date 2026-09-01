@@ -1,4 +1,4 @@
-# justc_core
+# justc\_core
 
 Just Compiler Core Library.
 

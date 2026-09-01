@@ -1,4 +1,4 @@
-# Just [Code]
+# Just \[Code]
 
 *Just* a general purpose programming language.
 

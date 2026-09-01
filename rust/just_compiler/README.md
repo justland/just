@@ -1,4 +1,4 @@
-# just_compiler
+# just\_compiler
 
 `just_compiler` is the initial *Just* compiler written in `Rust`.
 
