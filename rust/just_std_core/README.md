@@ -1,3 +1,3 @@
-# just_std_core
+# just\_std\_core
 
 *just* Standard Core Library.

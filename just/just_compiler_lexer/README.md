@@ -1,3 +1,3 @@
-# just_compiler_lexer
+# just\_compiler\_lexer
 
 *Just* compiler lexer.

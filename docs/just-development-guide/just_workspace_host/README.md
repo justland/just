@@ -1,4 +1,4 @@
-# just_workspace_host
+# just\_workspace\_host
 
 When a file is saved, `just_language_server` will produce artifacts and tell `just_weorkspace_host` to save those artifacts.
 
