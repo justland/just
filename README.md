@@ -1,5 +1,7 @@
 # Just \[Code]
 
+[![pull-request](https://github.com/justland/just/actions/workflows/pull-request.yml/badge.svg)](https://github.com/justland/just/actions/workflows/pull-request.yml)
+
 *Just* a general purpose programming language.
 
 Key highlights:
