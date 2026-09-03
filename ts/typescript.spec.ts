@@ -8,7 +8,7 @@ test("comment", () => {
     ScriptTarget.ES2020
   );
 
-  console.log(sourceFile.statements)
+  console.info(sourceFile.statements)
   // SourceFileObject {
   //   pos: 0,
   //   end: 10,
@@ -57,7 +57,7 @@ test("let statment", () => {
     ScriptTarget.ES2020
   );
 
-  console.log(sourceFile)
+  console.info(sourceFile)
   // SourceFileObject {
   //   pos: 0,
   //   end: 9,
