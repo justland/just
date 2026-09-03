@@ -10,6 +10,10 @@ permissions:
 jobs:
   code:
     uses: justland/.github/.github/workflows/pnpm-verify.yml@main
+    with:
+      # Nothing in this repo emits coverage - `ts/` holds two exploratory specs
+      # and there is no library source - so the upload has nothing to send.
+      skip-codecov: true
 
   rust:
     runs-on: ubuntu-latest

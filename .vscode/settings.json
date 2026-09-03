@@ -1,17 +1,17 @@
 {
-  "cSpell.words": [
-    "Bidi",
-    "LLVM",
-    "Peekable",
-    "Unvalidated",
-    "commitlint",
-    "idents",
-    "justc",
-    "librustc",
-    "multimethod",
-    "rustc",
-    "rustrun",
-    "typeahead",
-    "waitlist"
-  ]
+	"cSpell.words": [
+		"Bidi",
+		"LLVM",
+		"Peekable",
+		"Unvalidated",
+		"commitlint",
+		"idents",
+		"justc",
+		"librustc",
+		"multimethod",
+		"rustc",
+		"rustrun",
+		"typeahead",
+		"waitlist"
+	]
 }

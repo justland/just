@@ -1,0 +1,23 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"tasks": {
+		"check": {
+			"inputs": ["biome.jsonc", "package.json", "**/*.{ts,tsx,js,jsx,json,jsonc}"]
+		},
+		"doc:build": {
+			"cache": false
+		},
+		"lint": {
+			"inputs": ["biome.jsonc", "**/*.{ts,tsx,js,jsx}"]
+		},
+		"lint:doc": {
+			"inputs": [".remarkignore", "package.json", "**/*.md", "**/*.just", "**/*.lust", "**/*.rs"]
+		},
+		"test": {
+			"inputs": ["package.json", "tsconfig.json", "vitest.config.*", "ts/**/*.ts"]
+		},
+		"typecheck": {
+			"inputs": ["package.json", "tsconfig.json", "ts/**/*.ts"]
+		}
+	}
+}

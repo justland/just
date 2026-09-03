@@ -1,4 +1,4 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>unional/renovate-preset"]
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["github>unional/renovate-preset"]
 }
