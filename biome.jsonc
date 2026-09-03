@@ -1,0 +1,25 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.5.11/schema.json",
+	"extends": ["@repobuddy/biome/recommended"],
+	"files": {
+		"includes": ["!**/.turbo", "!**/coverage", "!**/node_modules", "!**/target", "!pnpm-lock.yaml", "!skills-lock.json"]
+	},
+	"javascript": {
+		// `extends` REPLACES `javascript.formatter` wholesale rather than merging into
+		// it, so the preset's quote and semicolon choices have to be restated here.
+		"formatter": {
+			"quoteStyle": "single",
+			"semicolons": "asNeeded",
+			"trailingCommas": "none"
+		}
+	},
+	"linter": {
+		"rules": {
+			"style": {
+				// Ships at `info`, where biome still exits 0 on a bare `fs` import.
+				// Pinned so a missing `node:` prefix actually fails `pnpm lint`.
+				"useNodejsImportProtocol": "error"
+			}
+		}
+	}
+}

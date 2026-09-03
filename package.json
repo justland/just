@@ -1,36 +1,42 @@
 {
-  "name": "just",
-  "private": true,
-  "packageManager": "pnpm@11.20.0",
-  "scripts": {
-    "build": "pnpm doc:build",
-    "doc:build": "remark . --quiet --output",
-    "lint:doc": "remark . --quiet --frail",
-    "prepare": "husky",
-    "test": "vitest run",
-    "verify": "run-p lint:doc test",
-    "watch": "vitest"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^21.2.2",
-    "@commitlint/config-conventional": "^21.2.2",
-    "husky": "^9.1.7",
-    "npm-run-all2": "^9.0.3",
-    "remark-cli": "^12.0.1",
-    "remark-code-import": "^1.2.0",
-    "typescript": "~5.9.3",
-    "vitest": "^4.1.11"
-  },
-  "remarkConfig": {
-    "settings": {
-      "bullet": "-",
-      "emphasis": "*",
-      "listItemIndent": "one",
-      "rule": "-",
-      "ruleSpaces": false
-    },
-    "plugins": [
-      "remark-code-import"
-    ]
-  }
+	"name": "just",
+	"private": true,
+	"packageManager": "pnpm@11.20.0",
+	"scripts": {
+		"build": "pnpm doc:build",
+		"check": "biome check",
+		"check:fix": "biome check --fix",
+		"doc:build": "remark . --quiet --output",
+		"format": "biome format . --write",
+		"lint": "biome lint .",
+		"lint:doc": "remark . --quiet --frail",
+		"prepare": "husky",
+		"test": "vitest run",
+		"verify": "run-p check lint:doc test",
+		"watch": "vitest"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.11",
+		"@commitlint/cli": "^21.2.2",
+		"@commitlint/config-conventional": "^21.2.2",
+		"@repobuddy/biome": "^2.3.1",
+		"husky": "^9.1.7",
+		"npm-run-all2": "^9.0.3",
+		"remark-cli": "^12.0.1",
+		"remark-code-import": "^1.2.0",
+		"typescript": "~5.9.3",
+		"vitest": "^4.1.11"
+	},
+	"remarkConfig": {
+		"settings": {
+			"bullet": "-",
+			"emphasis": "*",
+			"listItemIndent": "one",
+			"rule": "-",
+			"ruleSpaces": false
+		},
+		"plugins": [
+			"remark-code-import"
+		]
+	}
 }
