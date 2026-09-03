@@ -1,3 +1,21 @@
 {
+	"compilerOptions": {
+		"lib": ["esnext"],
+		// vitest bundles the specs, so `preserve` is the module mode that matches how
+		// they are actually loaded. It also keeps ESM syntax legal in a package that
+		// has no `"type": "module"`.
+		"module": "preserve",
+		"moduleDetection": "force",
+		// Nothing here is built: `ts/` holds exploratory specs that vitest runs
+		// directly, so `tsc` is only ever a typechecker.
+		"noEmit": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "esnext",
+		// TypeScript 7 no longer auto-includes every `@types/*` package, so the ones
+		// the specs actually need are named.
+		"types": ["node"],
+		"verbatimModuleSyntax": true
+	},
 	"include": ["ts"]
 }

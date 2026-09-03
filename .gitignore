@@ -43,3 +43,6 @@ typings
 
 # project folders
 target
+
+# turbo
+.turbo
