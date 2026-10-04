@@ -5,7 +5,7 @@ authors = ['Homa Wong <homawong@gmail.com>']
 edition = '2018'
 
 [dev-dependencies]
-assert_cmd = '^1'
+assert_cmd = '^2'
 predicates = '^1'
 galvanic-assert = '^0'
 expect-test = "1.0"
