@@ -26,7 +26,7 @@
 		"remark-cli": "^12.0.1",
 		"remark-code-import": "^1.2.0",
 		"turbo": "^2.10.12",
-		"typescript": "~5.9.3",
+		"typescript": "~6.0.0",
 		"vitest": "^5.0.0"
 	},
 	"remarkConfig": {
