@@ -1,7 +1,7 @@
 {
 	"name": "just",
 	"private": true,
-	"packageManager": "pnpm@12.10.0",
+	"packageManager": "pnpm@12.10.1",
 	"scripts": {
 		"build": "pnpm doc:build",
 		"check": "biome check",
